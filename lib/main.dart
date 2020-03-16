@@ -10,9 +10,13 @@ class HomePage extends StatelessWidget{
 
   Widget build(BuildContext context){
     return Scaffold(
-      body: Center(child: Container(
-        child: Text("Selamat datang di Flutter"),
-      ),),
-    );
+      body: Container(
+        color: Colors.red[700],
+        width: 400.0,
+        height: 200.0,
+        child: Center(child:Text("Selamat datang di Flutter",
+        style: TextStyle(color: Colors.white,fontSize: 20.0),
+        )) 
+      ));
   }
 }
