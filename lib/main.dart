@@ -19,12 +19,17 @@ class HomePage extends StatelessWidget{
           Icon(Icons.alarm)
         ],
       ),
-      body: Container(
-        color: Colors.red[700],
-        width: 400.0,
-        height: 200.0,
-        child: Center(child:Icon(Icons.alarm,color: Colors.white, size: 50.0,) 
-        )
-      ));
+      body: 
+      RaisedButton(
+        color: Colors.blueGrey,
+        textColor: Colors.white,
+        onPressed: (){
+
+        },
+        child: Text("Button Test",
+        style: TextStyle(fontSize: 20.0),),
+      )
+
+      );
   }
 }
