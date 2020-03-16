@@ -10,9 +10,9 @@ class HomePage extends StatelessWidget{
 
   Widget build(BuildContext context){
     return Scaffold(
-      body: Container(
-        child: Text("Selamat Datang di Flutter"),
-      ),
+      body: Center(child: Container(
+        child: Text("Selamat datang di Flutter"),
+      ),),
     );
   }
 }
