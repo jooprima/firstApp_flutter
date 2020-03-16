@@ -14,9 +14,8 @@ class HomePage extends StatelessWidget{
         color: Colors.red[700],
         width: 400.0,
         height: 200.0,
-        child: Center(child:Text("Selamat datang di Flutter",
-        style: TextStyle(color: Colors.white,fontSize: 20.0),
-        )) 
+        child: Center(child:Icon(Icons.alarm,color: Colors.white, size: 50.0,) 
+        )
       ));
   }
 }
