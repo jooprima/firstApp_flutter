@@ -20,15 +20,15 @@ class HomePage extends StatelessWidget{
         ],
       ),
       body: 
-      RaisedButton(
-        color: Colors.blueGrey,
-        textColor: Colors.white,
-        onPressed: (){
-
-        },
-        child: Text("Button Test",
-        style: TextStyle(fontSize: 20.0),),
-      )
+      TextField(
+        obscureText: true,
+        maxLength: 10,
+        decoration: InputDecoration(
+          hintText: "Nama Anda",
+          labelText: "Nama Anda",
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0))
+          )
+        ,)
 
       );
   }
