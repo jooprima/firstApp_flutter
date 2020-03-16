@@ -20,15 +20,8 @@ class HomePage extends StatelessWidget{
         ],
       ),
       body: 
-      TextField(
-        obscureText: true,
-        maxLength: 10,
-        decoration: InputDecoration(
-          hintText: "Nama Anda",
-          labelText: "Nama Anda",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0))
-          )
-        ,)
+      Image(image: NetworkImage("https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"),
+      height: 100.0,width: 100.0,)
 
       );
   }
