@@ -42,6 +42,22 @@ class HomePage extends StatelessWidget {
             Text("Belajar di NIOMIC",
                 style: TextStyle(
                     fontSize: 20.0, color: Colors.green, height: 3.0)),
+            Card(
+              color: Colors.blue,
+              child: Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.home,
+                    size: 40.0,
+                    color: Colors.white,
+                  ),
+                  Text(
+                    "Icon Home",
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  )
+                ],
+              ),
+            )
           ],
         ));
   }
