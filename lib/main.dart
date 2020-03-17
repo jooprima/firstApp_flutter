@@ -25,15 +25,18 @@ class HomePage extends StatelessWidget {
             ),
             Padding(padding: EdgeInsets.all(20.0)),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                Image.network(
-                  "https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60",
-                  height: 250.0,
-                ),
-                Image.network(
-                    "https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60",
-                    height: 250.0),
+                Expanded(
+                    flex: 2,
+                    child: Image.network(
+                      "https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60",
+                    )),
+                Padding(padding: EdgeInsets.all(5.0)),
+                Expanded(
+                    flex: 2,
+                    child: Image.network(
+                      "https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60",
+                    )),
               ],
             ),
             Text("Belajar di NIOMIC",
