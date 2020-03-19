@@ -7,6 +7,14 @@ class NumberScreen extends StatefulWidget {
 
 class _NumberScreenState extends State<NumberScreen> {
   int number = 0;
+  String _Nama = "Masukan Nama Anda : ";
+
+  void Nama(String _value) {
+    setState(() {
+      this._Nama = _value;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,6 +40,16 @@ class _NumberScreenState extends State<NumberScreen> {
                 this.number -= 1;
               });
             },
+          ),
+          RaisedButton(
+            onPressed: () {
+              Nama("jooprimasadfda");
+            },
+            child: Text("Nama Anda"),
+          ),
+          Text(
+            this._Nama,
+            style: TextStyle(fontSize: 30.0),
           )
         ],
       ),
