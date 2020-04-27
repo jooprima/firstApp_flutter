@@ -8,6 +8,7 @@ class NumberScreen extends StatefulWidget {
 class _NumberScreenState extends State<NumberScreen> {
   int number = 0;
   String _Nama = "Masukan Nama Anda : ";
+  String ValueText = "";
 
   void Nama(String _value) {
     setState(() {
@@ -50,7 +51,16 @@ class _NumberScreenState extends State<NumberScreen> {
           Text(
             this._Nama,
             style: TextStyle(fontSize: 30.0),
-          )
+          ),
+          TextField(
+            decoration: InputDecoration(hintText: "Masukan Nama Anda "),
+            onChanged: (String value){
+              setState(() {
+                this.ValueText = value;
+              });
+            },
+          ),
+          Text(this.ValueText, style: TextStyle(fontSize: 25.0, color: Colors.red),)
         ],
       ),
     );
